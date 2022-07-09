@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+#header {
+    background-color: #111;
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 0 5 15 rgba(236, 231, 231, 0.1);
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+
+#header .navbar {
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px 0;
+}
+
+#header .navbar .first .logo {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    align-items: center;
+}
+
+#header .navbar .first .logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 100px;
+    border: 2px solid whitesmoke;
+    border-radius: 30px;
+}
+
+#header .navbar .first .logo a {
+    font-size: 35px;
+    font-weight: 600;
+    color:rgb(241 74 10)
+}
+
+#header .navbar .first {
+    display: flex;
+    max-width: 1300px;
+    padding: 0 50px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+#header .navbar .first .menu li{
+    position: relative;
+}
+#header .navbar .first .menu a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    transition:all 0.3s ease;
+}
+
+#header .navbar .first .menu a:hover {
+    color: rgb(197, 167, 237);
+}
+#header .navbar .first .menu a:active{
+   color: #255d8a;
+}
+#header .navbar .first .menu li {
+    display: inline-block;
+    margin-left: 25px;
+    padding: 10px 10px;
+}
+
+.responsive {
+    color: #fff;
+    font-size: 25px;
+    display: none;
+    cursor: pointer;
+}
+
+/* Home section styling starts here */
+#home{
+    font-family: 'Ubuntu', sans-serif;
+}
+.home .home-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #111;
+    height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .home-content .home-left .text1 {
+    font-size: 15px;
+}
+
+.home .home-content .home-left .text2 {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.home .home-content .home-left .text3,
+.home .home-content .home-left .text4 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.home .home-content .home-left .text3 span,
+.home .home-content .home-left .text4 span {
+    font-size: 40px;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #c74444;
+
+}
+.home .home-content .home-left{
+    width: 40%;
+    margin: auto 0;
+    color: #fff;
+    padding: 5px 30px;
+}
+.home .home-content .home-right{
+    width: 60%;
+    margin: auto 0;
+    padding: 5px 30px;
+}.home .home-content .home-right .myimage{
+    padding: 30px 30px;
+}
+.home .home-content .home-right .myimage img{
+   width:100%;
+   height:90vh;
+   border: 1px solid #111;
+    border-radius: 60px;
+}
+/* Media query starts here  */
+@media (max-width: 991px) {
+    #header .navbar .first {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 50px;
+    }
+
+    .responsive {
+        display: block;
+        z-index: 999;
+        font-size: 30px;
+    }
+
+    #header .navbar .first .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: 0;
+        top: -100%;
+        background-color: #111;
+        text-align: center;
+        padding-top: 120px;
+    }
+
+    #header .navbar .first .menu .active {
+        left: 0;
+    }
+
+    #header .navbar .first .menu li {
+        display: block;
+    }
+
+    #header .navbar .first .menu li a {
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 40px;
+    }
+}
+
+/* about section styling */
+#about,
+#services {
+    margin-top: 50px;
+    padding: 20px 0;
+    transition: all 0.3s ease;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.about .title,
+.services .title,
+.skills .title,
+.team .title,
+.contact .title {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: #088171;
+}
+
+.about .title h2,
+.services .title h2,
+.skills .title h2 ,
+.team .title h2,
+.contact .title h2{
+    text-decoration: underline;
+}
+.about .about-pic{
+    text-align: center;
+    width: 100%;
+     margin-top: 30px;
+}
+.about .about-pic img{
+    width: 450px ;
+    height: 300px;
+    border: 1px solid whitesmoke;
+    border-radius: 90px;
+}
+.about .about-content {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #645f5f;;
+}
+
+.about .about-content .about-left {
+    width: 50%;
+    padding: 10px 75px;
+    font-size: 17px;
+}
+
+.about .about-content .about-right {
+    padding: 10px 75px;
+    width: 50%;
+    font-size: 17px;
+}
+
+.about .about-content .about-left .left1,
+.about .about-content .about-left .left2 {
+    margin-bottom: 25px;
+}
+
+.about-right h4 {
+    font-size: 20px;
+    color: #088171;
+    padding: 10px 0;
+}
+
+.about .cv {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.about .cv a {
+    text-decoration: none;
+    border: 1px solid wheat;
+    background-color: #088171;
+    color: white;
+    width: 40px;
+    height: 30px;
+    font-style: 'Ubuntu', sans-serif;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.about .cv a:hover {
+    color: #111;
+}
+
+/* service section styling starts here  */
+.services .para {
+    text-align: center;
+    color: #fb0404;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.services .provides {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+    text-align: center;
+}
+
+.services .provides .service1,
+.services .provides .service2,
+.services .provides .service3 {
+    width: 30%;
+    border: 1px solid blanchedalmond;
+    padding: 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.05);
+}
+
+.services .provides .service1:hover {
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.2);
+
+}
+
+.services .provides .service2:hover {
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.2);
+
+}
+
+.services .provides .service3:hover {
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.2);
+}
+
+.provides .icon1,
+.provides .icon2,
+.provides .icon3 {
+    padding-bottom: 20px;
+}
+
+.provides .topic {
+    color: rgb(48, 9, 137);
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+.services .provides .service1 .sercont,
+.services .provides .service2 .sercont,
+.services .provides .service3 .sercont{
+    font-size: 17px;
+    color: #645f5f;
+}
+/* Skills section styling starts here  */
+#skills{
+    margin: 30px 0;
+    transition: all 0.3s ease;
+    font-family: 'Ubuntu', sans-serif;
+}
+.skills .full{
+    margin: 30px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skills .full .skills-left .special{
+    font-size: 25px;
+    color: #c74444;
+    font-weight: 500;
+    padding:10px 0;
+}
+.skills .full .skills-left{
+    width: 50%;
+    font-size: 17px;
+    padding: 20px 30px;
+    color: #645f5f;;
+}
+.skills .full .skills-left .btn{
+    margin: 10px 0;
+  padding: 10px 0;
+}
+.skills .full .skills-left a:hover{
+    color: #111;
+}
+.skills .full .skills-left a{
+  text-decoration: none;
+  border: 1px solid whitesmoke;
+  background-color: #088171;
+  width: 50px 30px ;
+  border-radius: 6px;
+  font-weight: 500;
+  color: #fff;
+  padding: 5px 10px ;
+}
+.skills .full .skills-right{
+    width: 50%;
+    font-size: 20px ;
+    font-weight: 500;
+    padding: 20px 30px;
+}
+.skills .full .skills-right .bar1, .bar2, .bar3, .bar4, .bar5, .bar6 {
+    height: 5px;
+    background-color:lightgray;
+    width: 100%;
+    position: relative;
+}
+.skills .full .skills-right .bar1::before{
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background:  #59e082;
+}
+.skills .full .skills-right .bar2::before{
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background:  #59e082;
+}
+.skills .full .skills-right .bar3::before{
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #59e082;
+}
+.skills .full .skills-right .bar4::before{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background:  #59e082;
+}
+.skills .full .skills-right .bar5::before{
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background:  #59e082;
+}
+.skills .full .skills-right .bar6::before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background:   #59e082;
+}
+.skills .full .skills-right .skill{
+    padding-top: 20px;
+    color: rgb(67, 67, 175);
+}
+.skills .full .skills-right .skill .name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+/* Team section Styling starts here */
+#team{
+    margin: 30px 0;
+    transition: all 0.3s ease;
+    font-family: 'Ubuntu', sans-serif;
+}
+.team .t-name{
+    text-align: center;
+    color: #255d8a;
+    font-size: 25px;
+    font-style: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    padding: 20px 0;
+}
+.team .t-name span{
+    color:#c91818;
+    font-size: 28px;
+    font-weight: 600;
+}
+.team .members{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 40px 40px;
+}
+.team .members .mem1{
+    width: 50%;
+    padding: 20px 20px;
+    margin: 20px 20px ;
+    border: 1px solid #cce7d0;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.05);
+   
+}
+.te1{
+    color: #645f5f;
+    font-size: 17px;
+}
+.team .members .mem2{
+    width: 50%;
+    padding: 20px 20px;
+    margin: 20px 20px ;
+    border: 1px solid #cce7d0;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.05);
+}
+.team .members .mem1:hover{
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.1);
+}
+
+.team .members .mem2:hover{
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.1);
+}
+.team .members .mem1 .memname,
+.team .members .mem2 .memname{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(67, 67, 175);
+}
+.team .members .mem1 .job,
+.team .members .mem2 .job{
+   font-size: 17px;
+   font-weight: 400;
+   padding: 10px 10px ;
+}
+.team .members .mem1 .job h4,
+.team .members .mem2 .job h4{
+    padding: 5px 0;
+}
+.te2,.te3,.te4{
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 15px;
+    color: #157640;
+}
+.team .members .mem1-img img,
+.team .members .mem2-img img{
+    border: 1px solid whitesmoke;
+    border-radius: 200px;
+    background-position: center;
+    background-size: cover;
+}
+.team .members .mem1-img ,
+.team .members .mem2-img{
+    padding: 15px 0;
+}
+
+/* Contact Section Styling starts here  */
+
+#contact{
+    margin: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3ms ease;
+}
+.contact .message{
+    text-align: center;
+    color: rgb(126 36 134);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 0;
+
+}
+.contact .contact-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-style: 'Ubuntu', sans-serif;
+}
+.contact .contact-content form{
+    display: flex;
+    width: 50%;
+    margin: 20px 20px;
+    padding: 20px 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-style: 'Ubuntu', sans-serif;
+}
+.contact .contact-content .my-contact{
+    width: 50%;
+    height: 60vh;
+    margin: 20px 20px;
+    padding: 20px 20px;
+}
+.contact .contact-content .my-contact .bakwas{
+    color:#645f5f;
+    font-size: 17px;
+}
+.contact .contact-content form input{
+    margin-bottom: 10px;
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: 400;
+    border: 1px solid black;
+}
+.contact .contact-content form textarea{
+    margin-bottom: 10px;
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: 400;
+    border: 1px solid black;
+}
+.contact .contact-content form .normal{
+    width: 90px;
+    height: 40px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #088171;
+    border: 1px solid rgb(229, 206, 253);
+    border-radius: 6px;
+    padding: 5px 10px;
+}
+.contact .contact-content form button:hover{
+    color: #111;
+}
+.contact .my-contact .bakwas .head{
+    font-size: 20px;
+    color: #c74444;
+    font-weight: 400;
+    padding: 10px 0;
+}
+.contact .my-contact .bakwas .data{
+    font-size: 17px;
+    font-style: 'Ubuntu', sans-serif;
+    padding-bottom: 20px;
+}
+.contact .my-contact .contactors{
+    height: 30px;
+    font-size: 20px;
+    color: rgb(67, 67, 175);
+}
+
+/* Footer section styling starts here */
+
+#footer{
+    margin-bottom: 30px;
+}
+.footer .copywright{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
